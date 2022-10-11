@@ -1,0 +1,34 @@
+{
+  "name": "hyper-2d-js-game",
+  "version": "1.0.0",
+  "description": "2D Game written on JavaScript using ES6 standart",
+  "main": "backend/app.js",
+  "type": "module",
+  "scripts": {
+    "setup": "openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout backend/ssl/game.key -out backend/ssl/game.crt",
+    "start": "node backend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HypeRRu/js-game.git"
+  },
+  "keywords": [
+    "js",
+    "oop",
+    "es6",
+    "game",
+    "2d",
+    "tiled"
+  ],
+  "author": "HypeR",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HypeRRu/js-game/issues"
+  },
+  "homepage": "https://github.com/HypeRRu/js-game#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "https": "^1.0.0"
+  }
+}

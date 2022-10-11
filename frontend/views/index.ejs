@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS 2D Game</title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<div id="cover">
+		<div class="wrapper">
+			<p>2D JavaScript Game</p>
+			<table id="results">
+				<caption>Results</caption>
+				<thead>
+					<tr>
+						<th>Player name</th>
+						<th>Score</th>
+						<th>Levels completed</th>
+					</tr>
+				</thead>
+				<tbody>	
+				</tbody>
+			</table>
+			<label for="player-name">Your Name</label>
+			<input type="text" id="player-name" placeholder="Enter your name">
+			<button id="play">Play</button>
+		</div>	
+	</div>
+	<div class="game">
+		<canvas id="game-field"></canvas>
+		<canvas id="game-info"></canvas>
+	</div>
+	<div id="game-over">
+	</div>
+	<script type="module" src="scripts/game.js"></script>
+</body>
+</html>

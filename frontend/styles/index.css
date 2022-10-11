@@ -1,0 +1,135 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background: url("/img/background.jpg"), #33d561;
+	background-blend-mode: luminosity;
+	background-size: cover;
+}
+
+
+.game
+{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.game #game-field
+{
+	display: block;
+}
+
+.game #game-info
+{
+	display: block;
+}
+
+
+#cover
+{
+	color: #e3e3e3;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	margin: 0 auto;
+	z-index: 10;
+	background: url("/img/background.jpg");
+	background-size: cover;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	height: 100%;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper p
+{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 0;
+	mix-blend-mode: color-dodge;
+}
+
+.wrapper #results
+{
+	border: 2px solid #fefefe;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.wrapper #results th, td
+{
+	border: 2px solid #fefefe;
+	padding: 2px 10px;
+}
+
+.wrapper #results > caption
+{
+	font-size: 24px;
+}
+
+.wrapper #player-name
+{
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.wrapper #play
+{
+	display: block;
+	border: none;
+	font-size: 24px;
+	padding: 10px 60px;
+	color: #f2f2f2;
+	border: 1px solid #fff;
+	margin: 10px auto;
+	background-color: #1342d5;
+}
+
+.wrapper #play:hover
+{
+	cursor: pointer;
+	background-color: #276af3;
+}
+
+
+
+#game-over
+{
+	display: none;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: #d3d3d3;
+	z-index: 20;
+	background: url("/img/background.jpg");
+	background-size: cover;
+}
+
+#game-over h1{
+	position: relative;
+	font-size: 32px;
+	padding: 10px 20px;
+	top: 50%;
+	color: #fefefe;
+	transform: translateY(-50%);
+	text-align: center;
+}
