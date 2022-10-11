@@ -2,6 +2,10 @@
 2D Game written on JavaScript
 
 ## Application running guide
+>*First you need is install dependencies*
+>
+>`npm install`
+>
 >*To run this application you need to configure SSL*
 >
 >`npm run setup`
