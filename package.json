@@ -5,7 +5,7 @@
   "main": "backend/app.js",
   "type": "module",
   "scripts": {
-    "setup": "openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout backend/ssl/game.key -out backend/ssl/game.crt",
+    "setup": "mkdir -p backend/ssl && openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout backend/ssl/game.key -out backend/ssl/game.crt",
     "start": "node backend/app.js"
   },
   "repository": {
