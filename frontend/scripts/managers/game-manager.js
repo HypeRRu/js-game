@@ -169,7 +169,7 @@ export default class extends Manager
 			);
 		}
 		this.info.font		= "32px serif";
-		this.info.fillStyle	= "#d3d3d3"
+		this.info.fillStyle	= "#ffefef"
 		const text_x		= this.info.canvas.width - 200;
 		this.info.fillText(`Score: ${this.score}`, text_x, 40, 200);
 	}
